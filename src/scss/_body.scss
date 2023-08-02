@@ -1,0 +1,342 @@
+$footerAccentColor: #f8b410;
+
+body {
+  font-family: "Signika Negative", sans-serif;
+  background: var(--color-bg);
+}
+
+.body-height {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+
+  @media screen and (min-width: 1200px) {
+    // min-height: 730px;
+    padding: 0px 0px;
+    background: #000;
+  }
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+.body-img {
+  background-image: linear-gradient(
+      180deg,
+      rgb(62 62 62 / 65%) 0%,
+      rgb(0 0 0 / 74%) 50%,
+      rgb(0 0 0 / 82%) 100%
+    ),
+    url(../../img/bcg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #707070;
+}
+
+.title__link {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  border: aliceblue;
+  border-color: #fff !important;
+  font-weight: 500;
+  text-transform: none;
+  border-bottom: 1px solid;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: normal;
+  font-variant-ligatures: no-common-ligatures;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: 500;
+  text-align: left;
+}
+
+.hero__section {
+  height: 80vh;
+  background-image: linear-gradient(
+      90deg,
+      rgb(0 0 0 / 0%) 0%,
+      rgba(69, 56, 118, 0.27) 35%,
+      rgb(6 5 18 / 0%) 100%
+    ),
+    url(./../img/bcg.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    // padding-top: 120px;
+  }
+}
+
+.hero__content {
+  text-align: center;
+}
+
+.form-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form__input {
+  background: transparent;
+  border: 2px solid #c5b39a;
+  // border-radius: 4px;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+  resize: none;
+}
+
+.form__checkbox {
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 36px;
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.form__label-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  font-size: 12px;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;
+  color: #fff;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form__icon-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 15px;
+
+  border-radius: 2px;
+  background-color: #fff;
+
+  transition: background-color 0.3s;
+
+  .form__input-checkbox:checked + & {
+    background-color: var(--color-primary);
+  }
+}
+.form__icon-checkbox--left {
+  margin-right: 8px;
+}
+
+.hero__btn {
+  width: max-content;
+  padding: 20px 40px;
+  background-color: var(--color-accent);
+  font-size: 16px;
+  white-space: nowrap;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  color: #f6ffe7;
+  text-decoration: none;
+  box-shadow: inset 0px 0px 5px 0px #8f2a4c;
+  text-transform: uppercase;
+  background: linear-gradient(
+    var(--color-primary) -7.29%,
+    var(--color-primary-variant)
+  );
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 700;
+
+  // &:hover {
+  //   color: #122009;
+  // }
+  @media screen and (min-width: 1200px) {
+    padding: 20px 50px;
+  }
+}
+
+.hero__title {
+  position: absolute;
+  font-size: 48px !important;
+  top: 32%;
+  left: 8%;
+  line-height: 60px;
+  letter-spacing: normal;
+  font-weight: 500;
+  // background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgb(231 80 0 / 65%);
+  width: 85%;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    font-size: 48px !important;
+    top: 70%;
+    left: 10%;
+    line-height: 60px;
+    letter-spacing: normal;
+    font-weight: 500;
+    background-color: rgb(231 80 0 / 65%);
+    width: 60%;
+  }
+}
+
+.wrapper__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0%;
+  max-height: 450px;
+}
+
+.h2 {
+  text-align: center;
+  padding: 20px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px;
+  }
+}
+
+.input-email {
+  text-align: center;
+  padding: 1.1rem;
+  width: 70%;
+  border: none;
+  background-color: rgb(70 77 96 / 80%);
+  margin-bottom: 10px;
+  margin-top: 50px;
+
+  @media screen and (min-width: 1200px) {
+    // width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #ffffff2e;
+    // border-radius: 4px;
+  }
+}
+
+.form-label {
+  text-align: initial;
+  line-height: 1.19;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  // margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 15px;
+  }
+}
+
+.iframe {
+  width: 90%;
+  height: 90%;
+  height: 75vh;
+
+  border: 0;
+
+  @media screen and (min-width: 1200px) {
+    height: 70vh;
+  }
+}
+
+.desk-abs {
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    z-index: 3;
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+.gameCenter {
+  border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 585px;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  text-align: center;
+  color: var(--color-primary-variant);
+  font-size: 22px;
+  text-shadow: 1px 1px 2px black;
+
+  @media screen and (min-width: 1200px) {
+    width: 630px;
+  }
+}
