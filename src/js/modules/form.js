@@ -11,7 +11,7 @@
     form.reset();
 
     document.getElementById("gameFrame").src =
-      "https://asccw.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=legendoftheicedragon&lang=en_GB&practice=1&channel=desktop&demo=2";
+      "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?lang=en&cur=USD&gameSymbol=vs20fruitsw";
   });
 
   function toggleRegistrationModal() {
