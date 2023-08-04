@@ -14,7 +14,7 @@ $footerFontColor: #fff;
   --color-primary: #067302;
   --color-primary-hover: #16331e;
   --color-white: #f0f0f2;
-  --color-light: #fdf3e3;
+  --color-light: #e8e8d7;
   --color-accent: #f2e530;
   --color-second: #e15cf2;
   --color-inButton: #16331e;
@@ -23,8 +23,9 @@ $footerFontColor: #fff;
   --color-primary-variant: #d7f205;
 
   --color-modalsBG: linear-gradient(180deg, #f2e530, #f2be22 100.21%);
-  --bacckground-modals: #053959;
+  --bacckground-modals: #053959f5;
   --color-modalP: var(--color-inButton);
+  --color-link: #eeece5;
 
   --transition: all 300ms ease;
   --border-radius: 10px;

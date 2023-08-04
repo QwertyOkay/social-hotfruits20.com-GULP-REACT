@@ -321,6 +321,8 @@ h3 {
 .gameCenter {
   border-radius: 4px;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  padding: 5px;
+  background: #c3291b;
 
   @media screen and (min-width: 1200px) {
     max-width: 585px;

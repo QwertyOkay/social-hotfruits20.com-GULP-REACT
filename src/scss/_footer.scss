@@ -1,5 +1,5 @@
 $footerFontColor: #e4d8d1;
-$footerAccentColor: #b5aeb0;
+$footerAccentColor: var(--color-link);
 
 .link {
   color: $footerAccentColor;
