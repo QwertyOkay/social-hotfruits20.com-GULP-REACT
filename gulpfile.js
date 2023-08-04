@@ -2,8 +2,8 @@ const gulp = require('gulp');
 const babel = require('gulp-babel');
 const browserSync = require('browser-sync').create();
 
-const { path } = require('./gulp/config/path.js');
-const { plugins } = require('./gulp/config/plugins.js');
+const { path, plugins } = require('./gulp/config/path.js');
+// Убедитесь, что вы используете правильные пути для ваших файлов
 const { copy, reset, html, server, scss, js, images } = require('./gulp/tasks');
 
 function watcher() {
