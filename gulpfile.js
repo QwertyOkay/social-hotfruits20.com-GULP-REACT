@@ -2,16 +2,8 @@ const gulp = require('gulp');
 const babel = require('gulp-babel');
 const browserSync = require('browser-sync').create();
 
-const { path, plugins } = require('./gulp/config');
-
-global.app = {
-  isBuild: process.argv.includes('--build'),
-  isDev: !process.argv.includes('--build'),
-  path: path,
-  gulp: gulp,
-  plugins: plugins,
-};
-
+const { path } = require('./gulp/config/path.js');
+const { plugins } = require('./gulp/config/plugins.js');
 const { copy, reset, html, server, scss, js, images } = require('./gulp/tasks');
 
 function watcher() {

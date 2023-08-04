@@ -1,12 +1,12 @@
-import * as nodePath from "path";
+const path = require("path");
 
-const rootFolder = nodePath.basename(nodePath.resolve());
+const rootFolder = path.basename(path.resolve());
 console.log(rootFolder);
 
 const buildFolder = `./dist`;
 const srcFolder = `./src`;
 
-export const path = {
+const paths = {
   build: {
     js: `${buildFolder}/js/`,
     css: `${buildFolder}/css/`,
@@ -34,3 +34,5 @@ export const path = {
   srcFolder: srcFolder,
   rootFolder: rootFolder,
 };
+
+module.exports = { paths };
