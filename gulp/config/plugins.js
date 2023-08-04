@@ -1,11 +1,11 @@
-const replace = require("gulp-replace");
-const plumber = require("gulp-plumber");
-const notify = require("gulp-notify");
-const browsersync = require("browser-sync").create();
-const newer = require("gulp-newer");
-const ifPlugin = require("gulp-if");
+import replace from "gulp-replace";
+import plumber from "gulp-plumber";
+import notify from "gulp-notify";
+import browsersync from "browser-sync";
+import newer from "gulp-newer";
+import ifPlugin from "gulp-if";
 
-const plugins = {
+export const plugins = {
   replace: replace,
   plumber: plumber,
   notify: notify,
@@ -13,5 +13,3 @@ const plugins = {
   newer: newer,
   if: ifPlugin,
 };
-
-module.exports = { plugins };

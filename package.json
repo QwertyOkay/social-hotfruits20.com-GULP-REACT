@@ -1,21 +1,31 @@
 {
-  "name": "social-dragonpearlz-GULP",
+  "name": "gulp-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp",
+    "build": "gulp build --build"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qwertyokay/gulp-template.git"
+  },
+  "author": "Qwerty",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qwertyokay/gulp-template/issues"
+  },
+  "homepage": "https://github.com/qwertyokay/gulp-template#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "webpack": "^5.75.0",
+    "webpack-stream": "^7.0.0"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "browser-sync": "^2.27.11",
     "del": "^6.1.1",
-    "formik": "^2.2.9",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
@@ -34,24 +44,7 @@
     "gulp-webp-html-nosvg": "^1.1.1",
     "gulp-webpcss": "^1.1.1",
     "modern-normalize": "^1.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0",
-    "react-modal": "^3.16.1",
-    "react-router-dom": "^6.11.2",
-    "react-scripts": "5.0.1",
-    "react-toastify": "^9.1.3",
-    "sass": "^1.62.1",
-    "web-vitals": "^2.1.4",
-    "webp-converter": "^2.2.3",
-    "yup": "^1.1.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.22.9",
-    "@babel/preset-env": "^7.22.9",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "webpack": "^5.75.0",
-    "webpack-stream": "^7.0.0"
+    "sass": "^1.58.0",
+    "webp-converter": "^2.2.3"
   }
 }

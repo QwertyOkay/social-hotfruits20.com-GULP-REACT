@@ -64,9 +64,9 @@ h3 {
   height: 80vh;
   background-image: linear-gradient(
       90deg,
-      rgb(133 134 189 / 78%) 0%,
-      rgb(211 166 197 / 59%) 35%,
-      rgb(63 153 223 / 67%) 100%
+      rgb(0 0 0 / 0%) 0%,
+      rgba(69, 56, 118, 0.27) 35%,
+      rgb(6 5 18 / 0%) 100%
     ),
     url(./../img/bcg.jpg);
 
@@ -168,15 +168,14 @@ h3 {
   line-height: 1;
   text-align: center;
   cursor: pointer;
-  color: var(--color-title);
+  color: #f6ffe7;
   text-decoration: none;
   box-shadow: inset 0px 0px 5px 0px #8f2a4c;
   text-transform: uppercase;
-  // background: linear-gradient(
-  //   var(--color-primary) -7.29%,
-  //   var(--color-primary-variant)
-  // );
-  background: linear-gradient(#228fba -7.29%, #5eb5e0);
+  background: linear-gradient(
+    var(--color-primary) -7.29%,
+    var(--color-primary-variant)
+  );
   border: none;
   border-radius: var(--border-radius);
   font-weight: 700;
@@ -333,7 +332,7 @@ h3 {
   align-items: center;
   margin: 0px auto;
   text-align: center;
-  color: var(--color-title);
+  color: var(--color-primary-variant);
   font-size: 22px;
   text-shadow: 1px 1px 2px black;
 
