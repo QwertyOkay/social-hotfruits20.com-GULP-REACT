@@ -64,9 +64,9 @@ h3 {
   height: 80vh;
   background-image: linear-gradient(
       90deg,
-      rgb(0 0 0 / 59%) 0%,
-      rgb(69 56 118 / 45%) 35%,
-      rgb(6 5 18 / 55%) 100%
+      rgb(0 0 0 / 38%) 0%,
+      rgba(138, 43, 67, 0.15) 35%,
+      rgb(6 5 18 / 30%) 100%
     ),
     url(./../img/bcg.jpg);
 
@@ -161,16 +161,16 @@ h3 {
 
 .hero__btn {
   width: max-content;
-  padding: 20px 40px;
+  padding: 15px 40px;
   background-color: var(--color-accent);
   font-size: 16px;
   white-space: nowrap;
   line-height: 1;
   text-align: center;
   cursor: pointer;
-  color: #f6ffe7;
+  color: var(--color-inButton);
   text-decoration: none;
-  box-shadow: inset 0px 0px 5px 0px #8f2a4c;
+  // box-shadow: inset 0px 0px 5px 0px #8f2a4c;
   text-transform: uppercase;
   background: linear-gradient(
     var(--color-primary) -7.29%,
@@ -320,6 +320,7 @@ h3 {
 
 .gameCenter {
   border-radius: 4px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 
   @media screen and (min-width: 1200px) {
     max-width: 585px;

@@ -9,21 +9,22 @@ $footerFont-size: 14px;
 $footerFontColor: #fff;
 
 :root {
-  --color-bg: #0d031e;
+  --color-bg: #053959;
 
   --color-primary: #067302;
-  --color-primary-hover: #067302;
+  --color-primary-hover: #16331e;
   --color-white: #f0f0f2;
   --color-light: #fdf3e3;
-  --color-accent: #d7f205;
-  --color-second: #05c7f2;
+  --color-accent: #f2e530;
+  --color-second: #e15cf2;
+  --color-inButton: #16331e;
 
-  --color-bg-variant: #591202;
+  --color-bg-variant: #a60303;
   --color-primary-variant: #d7f205;
 
-  --color-modalsBG: linear-gradient(180deg, #09a603, #067302 100.21%);
-  --bacckground-modals: #18605b;
-  --color-modalP: #fdf0e9;
+  --color-modalsBG: linear-gradient(180deg, #f2e530, #f2be22 100.21%);
+  --bacckground-modals: #053959;
+  --color-modalP: var(--color-inButton);
 
   --transition: all 300ms ease;
   --border-radius: 10px;

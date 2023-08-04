@@ -19,7 +19,7 @@ $iconClose: #fff;
 }
 
 .icon__close {
-  fill: #fff;
+  fill: var(--color-inButton);
   width: 15px;
   height: 15px;
   color: $iconClose;
