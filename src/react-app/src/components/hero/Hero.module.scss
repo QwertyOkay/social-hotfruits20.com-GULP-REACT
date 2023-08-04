@@ -1,0 +1,88 @@
+@import 'styles/vars';
+
+.heroSection {
+  height: 100%;
+  padding: 100px 0;
+
+  text-align: center;
+
+  @media screen and (min-width: 720px) {
+    padding: 160px 0;
+  }
+}
+
+.heroTitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.62em;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-light);
+
+  text-shadow: 0px 11px 10px rgba(81, 67, 21, 0.8);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+    line-height: 1.36em;
+  }
+}
+
+.homeImgWrap {
+  margin-top: 40px;
+}
+
+.gameImg {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  max-height: 300px;
+  max-width: 350px;
+  display: block;
+  margin: 0px auto;
+}
+
+.btnContainer {
+  margin-top: 3rem;
+
+  text-align: center;
+}
+
+.btn {
+  position: relative;
+  min-width: 64px;
+  padding: 6px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-accent);
+  user-select: none;
+  vertical-align: middle;
+
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--color-white);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  //   @include Animation(box-shadow);
+
+  &:hover,
+  &:focus {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+
+    font-size: 1.1rem;
+  }
+}

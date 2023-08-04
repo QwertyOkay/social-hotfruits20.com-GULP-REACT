@@ -1,0 +1,29 @@
+@import 'styles/vars';
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.socialLink {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-accent);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 40px;
+    height: 40px;
+  }
+}
